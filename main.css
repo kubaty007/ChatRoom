@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+}
+
+body{
+    font-family: 'Bungee', cursive;
+}
+
+header{
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+header img{
+    max-height: 9vh;
+    width: auto;
+}
+
+main{
+    height: 64vh;
+}
+
+#panel{
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30vh;
+
+}
+
+#join-form{
+    width: 35%;
+    font-size: 22px;
+}
+
+#join-form fieldset{
+    display: inline-block;
+    margin: auto;
+}
+
+#join-form form div{
+    line-height: 1.2em;
+}
+
+#logo{
+    width: 55%;
+    display: flex;
+    align-items: center;
+}
+
+#join-form input[type=text]{
+    font-size: 0.8em;
+}
+
+#join-form input[type=submit]{
+    font-family: 'Bungee', cursive;
+    padding: 0px 2em;
+    font-size: 0.8em;
+    border-radius: 4px;
+    border: 0px;
+    background-color: #cf1717;
+    color: white;
+}
+
+#chat{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+footer{
+    background-color: #eeeeee;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    main{
+        height: 64vh;
+    }
+
+    #join-form{
+        width: 100%;
+        margin: auto;
+    }
+
+    #logo{
+        display: none;
+    }
+
+    header{
+        display: flex;
+        height: 10vh;
+    }
+
+    #panel{
+        margin-top: 20vh;
+    }
+
+    
+}
