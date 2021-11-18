@@ -39,5 +39,11 @@ $(function(){
 
     setInterval (loadLog, 500);
 
+    $("#input").keyup(function(event) {
+        if (event.keyCode === 13) {
+            $("#send").click();
+        }
+    });
+
     console.log("stop");
 });

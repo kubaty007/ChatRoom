@@ -54,6 +54,12 @@ main{
     font-size: 0.8em;
 }
 
+#forget{
+    margin-left: 70%;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+}
+
 #join-form input[type=submit]{
     font-family: 'Bungee', cursive;
     padding: 0px 2em;

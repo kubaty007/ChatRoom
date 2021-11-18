@@ -27,7 +27,8 @@
                     <form action="chat.php" method="post">
                         <div>
                             Nickname <br/>
-                            <input type="text" name="nickname" id="nickname" value="<?php if(isset($_SESSION['nick'])){echo $_SESSION['nick'];} ?>"> </br>
+                            <input type="text" name="nickname" id="nickname" value="<?php if(isset($_COOKIE['nickname'])){echo $_COOKIE['nickname'];} ?>"> </br>
+                            <a href="forgetMe.php" id="forget">forget me</a>
                         </div>
                         <input type="checkbox" name="remember" id="remember">
                         <label for="remember">Remember me</label> </br>

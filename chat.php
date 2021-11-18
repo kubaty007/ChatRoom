@@ -4,7 +4,10 @@
     }
     else{
         $nick = $_POST['nickname'];
-        $_SESSION['nick'] = $nick;
+        if(isset($_POST['remember'])){
+            setcookie('nickname', $nick, time() + (86400 * 60)); //60 dni
+            
+        }
     }
 
 ?>
@@ -30,7 +33,9 @@
 </head>
 <body>
     <header>
-        <img src="img/ChatRoom.png" alt="Logo ChatRoom">
+        <a href="index.php">
+            <img src="img/ChatRoom.png" alt="Logo ChatRoom">
+        </a>
     </header>
     <main>
         <div id="chat">
@@ -38,7 +43,9 @@
                     <div>
                         <?php echo 'Welcome <span id="user">'.$nick.'</span>!' ?>
                     </div>
-                    <button>Disconnect</button>
+                    <a href="index.php">
+                        <button>Disconnect</button>
+                    </a>
                 </div>
                 <div id="chat-display">
                     <?php

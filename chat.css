@@ -16,18 +16,18 @@ header img{
     max-height: 8vh;
     width: auto;
     margin-top: 1vh;
+    min-height: 50px;
 }
 
 main{
-    height: 85vh;
+    height: 83vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }
 
 #chat{
     width: 50%;
-    ;
     background-color: #eeeeee;
     padding: 20px;
 }
@@ -53,7 +53,7 @@ main{
     width: 100%;
     height: 60vh;
     background-color: #ffffff;
-    margin: 20px 0px;
+    margin: 1vh 0px;
     overflow-y: scroll;
     font-family: 'Lato', sans-serif;
     font-size: 20px;
